@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: argocd-svc
+    name: argocd-svc1
     namespace: privatecloud
 spec:
     type: LoadBalancer
