@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argocd-deployment
-  namespace: privatecloud
+  namespace: argocdtest
 #  app: frontent
 spec:
   selector:

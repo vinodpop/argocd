@@ -11,7 +11,7 @@ spec:
     path: app
   destination:
     server: https://kubernetes.default.svc
-    namespace: privatecloud
+    namespace: argocdtest
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
