@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: application
+metadata:
+  name: argocd
+  namespace: myargocd
+spec:
+  project: default
+  source: 
+    repoUrl: https://github.com/vinodpop/argocd.git
+    targetRevision: HEAD
+    path: app
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: privatecloud
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfheal: true
+      prune: true
