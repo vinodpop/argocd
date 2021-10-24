@@ -3,13 +3,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argocd-deployment
-  namespace: argocdtest
 #  app: frontent
 spec:
   selector:
     matchLabels:
       app: argocd-app
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
