@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: argocd-app
-        image: gcr.io/genial-reporter-329010/argocd:v1
+        image: gcr.io/genial-reporter-329010/argocd:v2
         ports:
           - containerPort: 5000
       
