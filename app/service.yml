@@ -5,6 +5,7 @@ metadata:
   name: argoservice
 #  app: service
 spec:
+  type: LoadBalancer
   selector:
     app: argocd-app
   ports:
